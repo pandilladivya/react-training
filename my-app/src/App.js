@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
-import Block from './block'
+import Shape from './shape'
 import './App.css'
 
 class App extends Component {
   render () {
     return (
       <div className='App'>
-        <Block color='red' />
-        <Block />
-        <Block color='blue' />
-        <Block />
+        <Shape color='blue' type='rectangle' />
+        <Shape color='green' type='circle' />
+        <Shape /> {/* Default color is black & shape is square */}
+        <Shape color='magenta' type='triangle' />
       </div>
     )
   }
